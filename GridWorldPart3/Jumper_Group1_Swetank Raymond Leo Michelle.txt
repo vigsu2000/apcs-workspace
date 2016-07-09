@@ -1,0 +1,13 @@
+
+Swetank
+Raymond
+Leo
+Michelle
+period 3 APCS
+Gridworld Jumper Questions
+1.	a. The jumper takes the place if there is a flower or a rock and removes it from the grid. It adds to the kill count of the jumper, reducing the step count by 10, but steps never less than 0.
+	b. If the jumper jumps off the grid, it reappears on the opposite side of where it jumped off from on the grid. If there is an actor on the other side, it removes the actor from that cell and takes its place, increasing the kill count, and changing the color if it is not a flower or a rock, reducing the step count by 10, but steps never less than 0.
+	c. It would jump and re-appear on the opposite side of the grid facing the same direction. (read b for more clarification)
+	d. The jumper will take its place and removes it from the grid, it takes the color of the actor it took the place of. It adds to the kill count of the jumper.
+	e. Jumpers will remove each other from the grid if the kill counts are the same. The one with the fewer kill counts dies, and the one with the greater number of kills lives on adds to its kill count.
+	f. If the kill count is 50, loop through the grid, removing everything in the grid. Then, print out the winner jumper. If the steps field is greater than 500, the jumper removes itself from grid, each kill reduces the step count by 10, but steps are cannot be less than 0. If it has a mood swing, there's a 50% chance that it will turn in any random direction specified by the fields of the location class. The other 50% of the time, it would move normally like it doesn't have a mood swing.

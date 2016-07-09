@@ -1,0 +1,78 @@
+
+Functionality Test
+------------------
+{1, 1, 2, 3, 5, 8, 13, }
+true
+false
+Caught exception from a bad insert (this is a good thing). Message: Bad Index: 10
+Caught exception from a bad remove (this is also a good thing). Message: Bad Index: 10
+{1, 1, 2, 3, 5, 8, 13, }
+true
+The test took 1 milliseconds.
+And -669296 bytes of memory.
+
+
+
+Efficiency Test (10000)
+-----------------------
+The test took 109 milliseconds.
+And -227344 bytes of memory.
+
+
+
+Efficiency Test (100000)
+------------------------
+The test took 7832 milliseconds.
+And 489456 bytes of memory.
+
+
+
+ResizableArray (10000)
+----------------------
+The test took 212 milliseconds.
+And -87312 bytes of memory.
+
+
+
+ResizableArray (100000)
+-----------------------
+The test took 23771 milliseconds.
+And 1885616 bytes of memory.
+
+
+
+ArrayList (10000)
+-----------------
+The test took 35 milliseconds.
+And -104736 bytes of memory.
+
+
+
+ArrayList (100000)
+------------------
+The test took 3420 milliseconds.
+And 2025080 bytes of memory.
+
+
+
+With Modification of Inserting at beginning
+-------------------------------------------
+Prediction: Run time will double (for 10000 using the ArrayList class, the run time will be around 70). This is 
+			because the inserts are placed at the beginning of the array, meaning that all the values of the array 
+			will have to shift. When items are removed, they are also removed from the beginning, meaning that the 
+			entire array will have to shift.
+		Memory will stay around the same (for 10000 using the ArrayList class, the run time will be around -104,736)
+Actual Result: The test took 66 milliseconds.
+			   And -90752 bytes of memory.		
+		
+		
+
+With Modification of Inserting at end
+-------------------------------------
+Prediction: Run time will get significantly smaller. Most likely around have as long as the original. This is because
+			the array will not have to shift at all for the inserts and removes because it is simply being inserted or
+			removed from the end. Due to the absence of the necessity to shift the array at any time, the run time 
+			will be cut significantly.
+		Memory will stay around the same (for 10000 using the ArrayList class, the run time will be around -104,736)
+Actual Result: the test took 59 milliseconds.
+			   And -90752 bytes of memory.
